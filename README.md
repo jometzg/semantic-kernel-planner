@@ -5,7 +5,7 @@ This is an implementation of the sample as descibed in the [learn module](https:
 ## What's in it for me?
 This repo provides an easy demonstration of the power of planning in Semantic kernel. 
 
-Plugins as a means of calling out to external services have been around for a while and these are based on [OpenAI function calling](https://platform.openai.com/docs/guides/function-calling). Plugins really  powerful, but often there are series of steps are needed to accomplish a real task. This can be messy without a planner.
+Plugins as a means of calling out to external services have been around for a while and these are based on [OpenAI function calling](https://platform.openai.com/docs/guides/function-calling). Plugins really  powerful, but often there are series of steps are needed to accomplish a real task. This can be [messy](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling) without a planner.
 
 It is hoped that this repo allows you to see how automatic functions and plugins can be coordinated in a planner - with very little code. The coordination or orchestration is done by the LLM, potentially calling into the plugin's *Kernel Functions* repeatedly to accomplish the user's goal.
 
@@ -51,8 +51,9 @@ OpenAIPromptExecutionSettings openAIPromptExecutionSettings = new()
 ````
 
 ## The Lights Plugin
-This is where all of the functions get called and is a simple model of a light:
+Another part of the learn documentation has an implementation of as lights pluging [here](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp) but I built my own.
 
+This is where all of the functions get called and is a simple model of a light:
 ````
 public class LightModel
 {
