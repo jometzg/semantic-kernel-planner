@@ -80,7 +80,7 @@ I originally started with a minimal set of kernel functions, but expanded these 
 8. get_the_light_onoff_status
 
 ## Sample conversation
-Below is a sample conversation. Note how it keeps track of what was previously asked and in some cases is making multiple kernel function calls to 
+Below is a sample conversation. Note how it keeps track of what was previously asked and in some cases is making multiple kernel function calls to achieve the user goal
 
 ````
 User > what is the birhtness of light ID 1
