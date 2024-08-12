@@ -12,7 +12,7 @@ It is hoped that this repo allows you to see how automatic functions and plugins
 Give it a try!
 
 ## Semantic Kernel Planners
-In previous iterations of semantic kernel, plans were their own distinct concept. With the advent of automatic function calling, now semantic kernel accomplishes planning using automatic function calling.
+In previous iterations of semantic kernel, plans were their own distinct concept. With the advent of [automatic function calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp), now semantic kernel accomplishes planning using automatic function calling.
 
 The planning loop is described in the first link above, but is really quite simple:
 
