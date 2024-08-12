@@ -1,6 +1,3 @@
-// This is the plug in. It uses an array of 20 lights that may be controlled
-// each of  the kernel functions have been added as more use cases are tried in the agent
-
 using System.ComponentModel;
 using Microsoft.SemanticKernel;
 
@@ -8,6 +5,7 @@ public class LightsPlugin
 {
     LightModel[] _lights = new LightModel[20];
 
+    // initalize the lights
     public LightsPlugin()
     {
         for (int i = 0; i < 20; i++)
@@ -29,8 +27,7 @@ public class LightsPlugin
         int id
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // get the light name by ID
         var name = _lights[id].Name;
         Console.WriteLine(name);
         return name;
@@ -43,8 +40,7 @@ public class LightsPlugin
         int id
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // get the brightness of a light
         var brightness = _lights[id].Brightness;
         Console.WriteLine(brightness);
         return brightness;
@@ -58,8 +54,7 @@ public class LightsPlugin
         int brightness
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        //set the brightness of a light
         _lights[id].Brightness = brightness;
         Console.WriteLine("Brightness set!");
     }
@@ -71,8 +66,7 @@ public class LightsPlugin
         int id
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // turn a light on
         _lights[id].IsOn = true;
         Console.WriteLine("Light turned on!");
     }
@@ -85,8 +79,7 @@ public class LightsPlugin
         string name
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // rename the light
         _lights[id].Name = name;
         Console.WriteLine("Light renamed!");
     }
@@ -98,8 +91,7 @@ public class LightsPlugin
         string name
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // search for the light by name
         for (int i = 0; i < 20; i++)
         {
             if (_lights[i].Name == name)
@@ -118,8 +110,7 @@ public class LightsPlugin
         Kernel kernel
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // list the IDs of all lights
         List<int> ids = new List<int>();
         for (int i = 0; i < 20; i++)
         {
@@ -136,8 +127,7 @@ public class LightsPlugin
         int id
     )
     {
-        // Add logic to send an email using the recipientEmails, subject, and body
-        // For now, we'll just print out a success message to the console
+        // get the on-off status of a light
         var isOn = _lights[id].IsOn;
         Console.WriteLine(isOn);
         return isOn;
