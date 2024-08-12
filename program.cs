@@ -1,3 +1,6 @@
+// using automated function calling
+// https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp
+
 #pragma warning disable SKEXP0050
 #pragma warning disable SKEXP0060
 
