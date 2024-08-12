@@ -56,6 +56,14 @@ public class LightsPlugin
     {
         //set the brightness of a light
         _lights[id].Brightness = brightness;
+        if(brightness > 0)
+        {
+            _lights[id].IsOn = true;
+        }
+        if(brightness == 0)
+        {
+            _lights[id].IsOn = false;
+        }
         Console.WriteLine("Brightness set!");
     }
 
