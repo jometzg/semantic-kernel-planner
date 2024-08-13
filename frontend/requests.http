@@ -1,0 +1,5 @@
+### post a json object to update the chart
+POST http://localhost:5000/update
+Content-Type: application/json
+
+[1,2,3,4,5,6,7,8,9,10]
