@@ -1,6 +1,6 @@
 # A Semantic kernel planner demonstration
 
-This is an implementation of the sample as descibed in the [learn module](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp) on semantic kernel planners. The learn page describes the use case of a virtual set of lamps that may be controlled. The learn module did not provide an implementation of the plugin for this, so this is what this repo seeks to address.
+This is an implementation of the sample as described in the [learn module](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp) on semantic kernel planners. The learn page describes the use case of a virtual set of lamps that may be controlled. The learn module did not provide an implementation of the plugin for this, so this is what this repo seeks to address.
 
 ## What's in it for me?
 This repo provides an easy demonstration of the power of planning in Semantic kernel. 
